@@ -1,6 +1,6 @@
 # esh.mk
 
-This is an [erlang.mk plugin](https://erlang.mk/guide/) to use the `esh` template engine.
+This is an [erlang.mk plugin](https://erlang.mk/) to use the `esh` template engine.
 
 See [esh project](https://github.com/jirutka/esh) and [esh man page](https://github.com/jirutka/esh/blob/master/esh.1.adoc) .
 
@@ -40,6 +40,18 @@ For instance :
 - `vm.args` file
 
 No output is displayed unless a syntax error occurs. In such case error will be printed.
+
+## Common caveat
+
+As `make` is using `/bin/sh` by default, underneath command `esh` is launched with this shell too by default. 
+If your current shell is not `/bin/sh` and your template is using environment variables in any way, you must tell `make` and `esh` to use your prefered shell.
+
+For instance for `/bin/bash` :
+
+```shell
+export MAKESHELL=$SHELL ; export ESH_SHELL=$MAKESHELL
+
+```
 
 ## Override environment variables
 

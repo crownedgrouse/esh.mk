@@ -18,7 +18,7 @@ esh_init:
 app:: esh
 
 esh: esh_init
-	$(foreach target,$(esh_templates), $(shell $(esh_script) -o $(target).out -- $(target)  $(ESH_VARS) && mv -f $(target).out $(dirname $(target))/$(basename $(target) .esh)))
+	$(foreach target,$(esh_templates), $(shell $(esh_script) -o $(target).out -- $(target)  ${ESH_VARS} && mv -f $(target).out $(dirname $(target))/$(basename $(target) .esh)))
 
 esh_help:
 	@$(esh_script) -h
