@@ -1,6 +1,6 @@
 # esh.mk
 
-This is an erlang.mk plugin to use the `esh` template engine.
+This is an [erlang.mk plugin](https://erlang.mk/guide/) to use the `esh` template engine.
 
 See [esh project](https://github.com/jirutka/esh) and [esh man page](https://github.com/jirutka/esh/blob/master/esh.1.adoc) .
 
