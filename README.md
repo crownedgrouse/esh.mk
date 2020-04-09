@@ -4,7 +4,7 @@ This is an erlang.mk plugin to use the `esh` template engine.
 
 See [esh project](https://github.com/jirutka/esh) and [esh man page](https://github.com/jirutka/esh/blob/master/esh.1.adoc) .
 
-This plugin can be used to generate any Erlang file which content can depends of OS or environment.
+This plugin can be used to generate any Erlang project file which content can depends of OS or environment.
 
 ## Install
 
