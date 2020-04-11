@@ -14,3 +14,4 @@ include $(THIS)/mk/esh.mk
 
 test::
 	@$(MAKE) -f $(realpath $(lastword $(MAKEFILE_LIST))) esh && diff test/test1.ref test/test1
+	@rm -f test/test1

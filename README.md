@@ -73,7 +73,7 @@ See also next section Help for other esh variables.
 
 ## Help
 
-Using erlang.mk `help` target will tell you than target `esh_help` will output `esh` script help. This help will show you other variables available to tune `esh`.
+Using erlang.mk `help-plugins` target will tell you that target `esh_help` will output `esh` script help. This help will show you other variables available to tune `esh`.
 
 ## Force update/install
 
