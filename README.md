@@ -9,8 +9,8 @@ This plugin can be used to generate any Erlang project file which content can de
 ## Install
 
 ```make
-BUILD_DEPS = esh.mk
-DEP_PLUGINS = esh.mk
+BUILD_DEPS = esh_mk
+DEP_PLUGINS = esh_mk
 
 include erlang.mk
 ```
@@ -18,8 +18,8 @@ include erlang.mk
 if a specific branch or version is required, use this syntax :
 
 ```make
-BUILD_DEPS = esh.mk
-dep_esh.mk = git https://github.com/crownedgrouse/esh.mk master  # for branch master
+BUILD_DEPS = esh_mk
+dep_esh_mk = git https://github.com/crownedgrouse/esh.mk master  # for branch master
 
 include erlang.mk
 ```
