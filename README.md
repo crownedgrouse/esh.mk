@@ -29,8 +29,13 @@ include erlang.mk
 Once esh plugin declared in your project's Makefile, simply run :
 
 ```shell
-$> make esh
+$> make esh          # Generate targets from esh templates only
 ```
+or
+```shell
+$> make app          # Generate targets from esh templates before app
+```
+
 First call will show the wget command output to download `esh` tarball. If some proxy parameters are needed, considere use of [`wgetrc` file](https://www.gnu.org/software/wget/manual/html_node/Startup-File.html#Startup-File).
 
 Any file with suffix `.esh` found under project's root directory will be treated and a target file generated in same directory with same name without `.esh` suffix.
